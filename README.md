@@ -1,6 +1,6 @@
 # Vapor Dockerfiles Using Debian
 
-See [Laravel Vapor documentation](https://docs.vapor.build/1.0/projects/environments.html#runtime) on how to use a docker bases runtime:
+See [Laravel Vapor documentation](https://docs.vapor.build/1.0/projects/environments.html#runtime) on how to use a docker based runtime:
 
 In oder to use this image use the following in your environment dockerfile:
 
