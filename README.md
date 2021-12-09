@@ -1,8 +1,16 @@
 # Vapor Dockerfiles Using Debian
 
-See [Laravel Vapor documentation](https://docs.vapor.build/1.0/projects/environments.html#runtime) on how to use a docker based runtime:
+The Dockerfiles provided with this repository use Debian Buster instead of Alpine Linux, which made further customization a lot easier for me.
 
-In oder to use this image use the following in your environment dockerfile:
+See [Laravel Vapor documentation](https://docs.vapor.build/1.0/projects/environments.html#runtime) on how to use a docker based runtime.
+
+## Dockerhub
+
+The images are published to the following repository on Dockerhub: [denizp/vapor](https://hub.docker.com/repository/docker/denizp/vapor)
+
+## Available Images
+
+### Default Debian Buster
 
 ```
 FROM denizp/vapor:php81-buster
@@ -10,9 +18,9 @@ FROM denizp/vapor:php81-buster
 COPY . /var/task
 ```
 
-## Puppeteer and [spatie/browsershot](https://github.com/spatie/browsershot)
+### Puppeteer and [spatie/browsershot](https://github.com/spatie/browsershot)
 
-### Vapor environment dockerfile
+#### Vapor environment dockerfile
 
 ```
 FROM denizp/vapor:php81-buster-puppeteer
@@ -20,7 +28,7 @@ FROM denizp/vapor:php81-buster-puppeteer
 COPY . /var/task
 ```
 
-### Chromium Arguments
+#### Chromium Arguments
 
 Tested and it works with the following Chromium arguments.
 
@@ -47,9 +55,3 @@ if (app()->environment() !== 'local') {
     ]);
 }
 ```
-
-## Dockerhub
-
-https://hub.docker.com/repository/docker/denizp/vapor
-
-
