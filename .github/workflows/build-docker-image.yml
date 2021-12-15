@@ -22,3 +22,6 @@ jobs:
     
     - name: Build & Publish PHP 8.1 Buster
       run: sh build.sh php81-buster -p
+      
+    - name: Build & Publish PHP 8.1 Buster Puppeteer
+      run: sh build.sh php81-buster-puppeteer -p
