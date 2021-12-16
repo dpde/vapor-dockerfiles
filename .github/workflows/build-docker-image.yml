@@ -27,4 +27,4 @@ jobs:
       run: sh build.sh php81-buster-puppeteer -p
 
     - name: Build & Publish PHP 8.1 Buster Libre Office
-      run: sh build.sh php81-buster-puppeteer -p
+      run: sh build.sh php81-buster-libreoffice -p
